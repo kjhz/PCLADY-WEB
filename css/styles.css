@@ -1,0 +1,742 @@
+@import url(./normalize.css);
+@import url(./skeleton.css);
+
+body {
+  font-family: "宋体";
+}
+/* 头部 */
+header {
+  background-color: #f8f8f8;
+  line-height: 28px;
+  border-bottom: 1px solid rgb(202, 201, 201);
+  z-index: 9999;
+}
+
+
+header .nav-left span {
+  float: left;
+}
+
+header .nav-left a {
+  float: left;
+  text-decoration: none;
+  padding: 4px 12px;
+  margin: 4px 0;
+  line-height: 12px;
+  border-left: 1px solid rgb(202, 201, 201);
+}
+
+header .nav-left a:first-of-type {
+  border-style: none;
+}
+
+.nav-left .nav-cur {
+  background-color: white;
+  margin: 0;
+  padding: 0 12px;
+  line-height: 28px;
+  border: 1px solid rgb(202, 201, 201);
+  border-bottom: none;
+}
+
+.nav-left .nav-cur-after {
+  border: none;
+}
+
+/* 头部右侧  */
+header .nav-right {
+  float: right;
+}
+
+header .nav-right ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+header .nav-right ul li {
+  float: left;
+}
+
+.nav-right a {
+  text-decoration: none;
+  display: block;
+}
+
+.nav-right a[class="login"] {
+  display: inline-block;
+}
+
+#register {
+  float: left;
+}
+
+.drop-li {
+  position: relative;
+  float: left;
+  margin: 0 15px;  /* 右侧间距 */
+}
+
+/* 头部右侧下拉框及其箭头 */
+.drop-li .drop-li-t {
+  visibility: hidden;
+  width: 120px;
+  background-color: white;
+  border: 1px solid rgb(202, 201, 201);
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  margin-left: -60px;
+  text-align: left;
+}
+
+.drop-li .drop-li-t1 {
+  width: 70px;
+  margin-left: -35px;
+}
+
+.drop-li .drop-li-t::after {
+  content:"";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 7px;
+  border-style: solid;
+  border-color: transparent transparent rgb(202, 201, 201) transparent;
+}
+
+/* 头部下拉框位置  */
+.drop-li:hover .drop-li-t {
+  visibility: visible;
+  cursor: pointer;
+}
+
+.drop-li .drop-li-t a {
+  padding-left: 27px;
+}
+
+.drop-li .drop-li-t1 a {
+  padding-left: 6px;
+  line-height: 26px;
+}
+
+header .nb-item {
+ margin-top: 8px;
+ margin-left: 10px;
+ line-height: 20px;
+}
+
+
+/* 背景图案组 */
+.nb-item,.nb-arrow {
+ background: url(../images/header/navbar.png) no-repeat;
+}
+
+/* 头部下拉框背景 */
+.nb-item-pc {
+  background-position: -5px -122px;
+}
+
+.nb-item-weibo {
+  background-position: 0 -183px;
+}
+
+.nb-item-qq {
+  background-position: -5px -154px;
+}
+
+.nb-item-wechat {
+  background-position: 0 -243px;
+}
+
+header .nb-item-pc {
+  border-bottom: 1px dashed rgb(202, 201, 201);
+}
+
+/* 旋转箭头  */
+header .nb-arrow {
+  display: inline-block;
+  width: 5px;
+  height: 3px;
+  vertical-align: middle;
+  background-position: -16px -20px;
+}
+
+.drop-li:hover .nb-arrow {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transition: .25s;  
+  -webkit-transition: .25s;
+  -moz-transition: .25s;
+  -o-transition: .25s;
+}
+
+/* 主体导航区 */
+main {
+  z-index: 0;
+}
+main>nav {
+  position: relative;
+  width: 100%;
+}
+
+main>nav #nav-logo {
+  display: block;
+  background: url(../images/header/logo_20170330.jpg) no-repeat;
+  width: 210px;
+  height: 77px;
+  margin: 20px auto;
+}
+
+main>nav #main-nav {
+  overflow: hidden;
+  background-color: black;
+  width: 100%;
+  position: relative;
+}
+
+#main-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#main-nav ul li {
+  float: left;
+}
+
+#main-nav a {
+  display: inline-block;
+  padding: 0 24px;
+  margin: 11px  0;
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+  border-right: 1px solid #acacac;
+  line-height: 1;
+}
+#main-nav ul a:hover {
+  color: rgb(196, 26, 187);
+}
+
+/* indexpic 全局图片组 */
+.search, .todayFocus>h2, .mainTittle, .colName>a, .listNum{
+  background: url(../images/global/indexPic.png) no-repeat;
+}
+
+.myapp,.weixin,.weibo {
+  background: url(../images/global/sprite.png) no-repeat;
+}
+
+/* 导航区搜索框 */
+main>nav form {
+  float: right;
+  
+  margin: 0 10px 0 0;
+  padding: 0;
+  line-height: 37px;
+}
+
+.inpText,.search {
+  position: relative;
+  margin: 0;
+}
+
+.inpText {
+  z-index: 1;
+  border-radius: 5px;
+  border: none;
+  padding: 2px 0 2px 2px;
+}
+
+.search {
+  z-index: 2;
+  width: 17px;
+  height: 17px;
+  border: none;
+  background-position: 0 -380px;
+  text-indent: -9999px;
+}
+
+/* 导航 弹出区 */
+/* “首页” 部分 */
+main>nav .navBox {
+  position: relative;
+  width: 100%;
+  z-index: 10;
+  display: inline-block;
+}
+
+.navBox .appName {
+  float: left;
+  box-sizing: border-box;
+  width: 130px;
+  margin: 12px 0;
+  padding: 0 0 0 15px;
+  border-right: 1px solid rgb(202, 201, 201);
+  z-index: 0;
+}
+
+.navBox .box-app {
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 12px;
+  padding: 4px 0 4px 28px;
+  line-height: 20px;
+}
+
+.navBox .myapp {
+  background-position: -180px 1px;
+}
+
+.navBox .weixin {
+  background-position: -177px -34px;
+}
+
+.navBox .weibo {
+  background-position: -177px -68px;
+}
+
+.navBox .qr-code {
+  visibility: hidden;
+  position: absolute;
+  z-index: 99;
+  top: 40px;
+  padding: 10px 10px 0;
+  background-color: white;
+  border-top: 1px unset rgb(202, 201, 201);
+}
+
+.navBox .appName:hover .qr-code {
+  visibility: visible;
+}
+
+/* 轮播图 */
+.row {
+  clear: both;
+}
+.carousel, .slide-wrap, .imgWrap, .first-pic {
+  position: relative;
+}
+
+.prev, .next, .circle-ctrl, .pic, .imgWrap span {
+  position: absolute;
+}
+
+.carousel {
+  display: inline-block;
+}
+.imgWrap ul {
+  margin: 0;
+  padding: 0;
+}
+
+.imgWrap {
+  width: 100%;
+  display: inline-block;
+}
+
+.imgWrap img {
+  width: 100%;
+}
+
+.imgWrap .pic {
+  top: 0;
+  margin-left: 100%;
+}
+
+.imgWrap span { /* 轮播图文字 */
+  width: 80%;
+  text-align: center;
+  margin: 0 10%;
+  bottom: 12%;
+  font-weight: 500;
+  color: white;
+  text-shadow: 0 0 3px #5a4545;
+}
+
+.imgWrap ul {
+  list-style-type: none;
+}
+
+.carousel-rec {
+  float: left;
+  width: 9px;
+  height: 9px;
+  margin: 0 5px;
+  background-color: rgb(202, 201, 201);
+}
+
+.circle-ctrl .cur-rec {
+  background-color: rgb(196, 26, 187);
+}
+
+.circle-ctrl {
+  left: 50%;
+  margin-left: -42px;
+  bottom: 15px;
+  z-index: 998;
+}
+
+.prev, .next {
+  display: block;
+  width: 37px;
+  height: 73px;
+  z-index: 999;
+  top: 40%;
+}
+
+.prev {
+  background: url(../images/global/new-prev01.png) no-repeat;
+  left: -38px;
+}
+
+.next {
+  background: url(../images/global/new-next01.png) no-repeat;
+  right: -38px;
+}
+
+.slide-wrap {
+  overflow: hidden;
+}
+
+.carousel:hover .prev {
+  transform: translateX(38px);
+  -webkit-transform: translateX(38px);
+  -moz-transform: translateX(38px);
+  -o-transform: translateX(38px);
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -o-transition: .3s;
+}
+
+.carousel:hover .next {
+  transform: translateX(-38px);
+  -webkit-transform: translateX(-38px);
+  -moz-transform: translateX(-38px);
+  -o-transform: translateX(-38px);
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -o-transition: .3s;
+}
+
+.carousel:hover .imgWrap {
+  opacity: 0.8;
+}
+
+
+/* 今日焦点 */
+.picModules {
+  position: relative;
+}
+
+.picTittle {
+  position: absolute;
+}
+
+.todayFocus {
+  margin-top: 20px;
+}
+
+.todayFocus>h2 {
+  background-position: -80px -460px;
+  width: 253px;
+  height: 31px;
+  text-indent: -9999px;
+  margin: 20px;
+}
+
+.hoverOpacity:hover {
+  opacity: 0.8;
+}
+
+.picTittle {
+  width: 80%;
+  bottom: 10%;
+  color: white;
+  margin: 0 10%;
+  text-align: center;
+  text-shadow: 0 0 2px black;
+}
+
+/* 含边框列表模块one */
+.listModuleOne {
+  border: 8px solid #f6f6f8;
+  padding: 8px;
+}
+
+.listModuleOne a {
+  text-decoration: none;
+  font-size: 11px;
+}
+
+.listModuleOne h5 {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.listModuleOne p {
+  font-size: x-small;
+  color: #acacac;
+  margin-left: 30px;
+}
+
+.listModuleOne span {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.listModuleOne video {
+  width: 95%;
+}
+
+/* 带横向的标题 */
+.bor-tittle {
+  height: 12px;
+  margin-bottom: 22px;
+  border-bottom: 1px solid #888;
+  position: relative;
+  text-align: center;
+}
+.bor-tittle span {
+  padding: 0 10px;
+  background-color: #f6f6f8;
+  font-size: 20px;
+}
+
+/* 今日焦点 灰色背景板块 */
+.bgGray {
+  background-color: #f6f6f8;
+  padding: 20px;
+}
+
+.clearMargin {
+  margin-left: 0;
+}
+
+#small-carousel .circle-ctrl{
+  position: relative;
+  bottom: 20px;
+}
+
+.carousel a {
+  text-decoration: none;
+}
+
+.carousel p {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.carousel .ca-detail {
+  font-weight: lighter;
+}
+
+#small-carousel .prev, #small-carousel .next {
+  top: 25%;
+}
+
+.good-rec {
+  margin-bottom: 10px;
+  line-height: 40px;
+  font-size: 2.4rem;
+}
+
+/* 标准栏目设置 */
+
+
+.colName  {
+  border-bottom: 1px solid black;
+  height: 56px;
+  margin: 20px 0;
+}
+
+.colName>a {
+  display: block;
+  width: 377px;
+  height: 56px;
+  margin: 0 auto;
+}
+
+.colNav {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+.colNav ul {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.colNav li {
+  float: left;
+  text-align: center;
+  line-height: 1;
+  border-left: 2px solid #acacac;
+}
+
+.colNav li a {
+  margin: 0 28px;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.colNav li:first-child {
+  border-left: none;
+}
+
+
+/* 特别策划 */
+#specialPlan{
+  background-position: -70px -832px;
+}
+
+#threeCarousel {
+  height: 300px;
+}
+
+.imgWrap .pic {
+  top: 0;
+  width: 100%;
+  margin-left: 100%;
+}
+
+#threeCarousel .circle-ctrl{
+  position: relative;
+  bottom: 20px;
+}
+
+#threeCarousel .prev, #threeCarousel .next {
+  top: 25%;
+}
+
+/* 美容 */
+#beauty {
+  background-position: -70px -903px;
+}
+
+ul[class="listNoType"] {
+  margin: 00 0 0 10px;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* 定义列表数字图案 */
+.listNum {
+  padding-left: 30px;
+  font-size: 1.5rem;
+  margin: 5px 0;
+}
+
+.listNum:nth-child(1) {
+  background-position: -440px 6px;
+}
+
+.listNum:nth-child(2) {
+  background-position: -440px -196px;
+}
+
+.listNum:nth-child(3) {
+  background-position: -440px -36px;
+}
+
+.listNum:nth-child(4) {
+  background-position: -440px -236px;
+}
+
+.listNum:nth-child(5) {
+  background-position: -440px -76px;
+}
+
+.listNum:nth-child(6) {
+  background-position: -440px -276px;
+}
+
+.listNum:nth-child(7) {
+  background-position: -440px -116px;
+}
+
+/* 列表浮动 */
+.listNum:hover {
+  transform:translateX(10px);
+  -webkit-transform: translateX(10px);
+  -moz-transform: translateX(10px);
+  -o-transform: translateX(10px);
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -o-transition: .3s;
+}
+.listNum:hover a{
+  color: black;
+  opacity: 0.5;
+}
+
+.toBottom {
+  position: relative;
+  bottom: 0;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+/* 美容区右侧滑动块 */
+.height-515 {
+  height: 515px;
+}
+
+/* 时尚区 */
+#fashion {
+  background-position: -129px -60px;
+  width: 285px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+  overflow: auto;
+}
+
+.mt-25{
+  margin-top: 25px;
+}
+
+/* footer */
+.ft {
+  font-size: 1.3rem;
+  color: #acacac;
+  margin: 10px 20px;
+}
+
+.current {
+  font-size: 1.6rem;
+  font-weight: bolder;
+  color: black;
+}
+
+.content {
+  font-size: 1rem;
+  margin: 20px 0;
+}
+
+.content a {
+  text-decoration: none;
+}
+
+.content a:hover {
+  color: #acacac;
+  text-decoration: underline;
+}
+
+.content a::after {
+  content: "|"
+}

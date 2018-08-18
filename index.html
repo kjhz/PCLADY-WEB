@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PCLADY</title>
+    <meta name="keywords" content="时尚，女性，太平洋女性网" />
+    <meta name="description" content="个人项目" />
+    <meta name="author" content="梁福苹" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="nav-left">
+                <span>太平洋网络：</span>
+                <a href="">电脑网</a>
+                <a href="">汽车网</a>
+                <a href="" class="nav-cur">时尚网</a>
+                <a href="" class="nav-cur-after">亲子网</a>
+                <a href="">家居网</a>
+            </div>
+            <div class="nav-right">
+                <ul>
+                    <!-- 注册 登陆 -->
+                    <li>
+                        <div class="drop-li">
+                            <a href="" class="login"><span>登陆</span></a>
+                            <i class="nb-arrow"></i>
+                            <div class="drop-li-t">
+                                <a href="" class="nb-item nb-item-pc">通行证登陆</a>
+                                <a href="" class="nb-item nb-item-weibo">微博登陆</a>
+                                <a href="" class="nb-item nb-item-qq">QQ登陆</a>
+                                <a href="" class="nb-item nb-item-wechat">微信登陆</a>
+                            </div>
+                        </div>
+                        <div id="register"><a href="">注册</a></div>
+                    </li>
+                    <!-- 摩登学院 -->
+                    <li>
+                        <div class="drop-li">
+                            <span>摩登学院</span>
+                            <i class="nb-arrow"></i>
+                            <div class="drop-li-t drop-li-t1">
+                                <a href="">首页</a>
+                                <a href="">课堂圈子</a>
+                                <a href="">摩登大人</a>
+                                <a href="">活动中心</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <!-- 导航栏 -->
+        <nav>
+            <a href="" id="nav-logo"></a>
+            <div class="row"  id="main-nav">
+                <ul>
+                    <li><a href="">首页</a></li>
+                    <li><a href="">美容</a></li>
+                    <li><a href="">时尚</a></li>
+                    <li><a href="">明星</a></li>
+                    <li><a href="">乐活</a></li>
+                    <li><a href="">视频</a></li>
+                    <li><a href="">试用</a></li>
+                    <li><a href="">化妆品库</a></li>
+                </ul>
+                <form target="_blank" method="GET" action="" onsubmit="javscript:;">
+                    <input type="search" value="温碧泉面膜" class="inpText">
+                    <input type="submit" class="search">
+                </form>
+            </div>
+
+            <!-- 导航 弹出区 -->
+            <div class="navBox">
+                <div class="appName">
+                    <a href="" class="box-app myapp">摩登课堂APP</a>
+                    <div class="qr-code">
+                        <img src="./images/global/mo_modern.jpg" alt="二维码：摩登课堂APP" width="152" height="152">
+                    </div>
+                </div>
+                <div class="appName">
+                    <a href="" class="box-app myapp">PCLADY移动版</a>
+                    <div class="qr-code">
+                        <img src="./images/global/mo_pclady.png" alt="二维码：PC移动版"  width="152" height="152">
+                    </div>
+                </div>
+                <div class="appName">
+                    <a href="" class="box-app box-app weixin">微信公众号</a>
+                    <div class="qr-code">
+                        <img src="./images/global/wx_pclady.jpg" alt="二维码：微信公众号" width="152" height="152">
+                    </div>
+                </div>
+                <div class="appName">
+                    <a href="" class="box-app weibo">官方微博</a>
+                    <div class="qr-code">
+                        <img src="./images/global/wb.jpg" alt="二维码：官方微博" width="152" height="152">
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- 主轮播图 -->
+        <section class="row carousel" id="mainCarousel">
+            <div>
+                <div class="slide-wrap">
+                    <a href="" class="prev" target="_self"></a>
+                    <a href="" class="next" target="_self"></a>
+                    <div class="imgWrap">
+                        <ul>
+                            <li><a href="">
+                                <img src="./images/pclady/carouse/0806PC.jpg" alt="" >
+                                <span>图片描述文本1</span>
+                            </a></li>
+                            <li class="pic" ><a href="">
+                                <img src="./images/pclady/carouse/0807PC.jpg" alt="" >
+                                <span>图片描述文本2</span>
+                            </a></li>
+                            <li class="pic" ><a href="">
+                                <img src="./images/pclady/carouse/1120-500-100k.jpg" alt="" >
+                                <span>图片描述文本3</span>
+                            </a></li>
+                            <li class="pic" ><a href="">
+                                <img src="./images/pclady/carouse/1120-500_5.jpg" alt="" >
+                                <span>图片描述文本4</span>
+                            </a></li>
+                            <li class="pic" ><a href="">
+                                <img src="./images/pclady/carouse/1120_3.jpg" alt="" >
+                                <span>图片述文本5</span>
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="circle-ctrl">
+                    <div class="carousel-rec cur-rec"></div>
+                    <div class="carousel-rec"></div>
+                    <div class="carousel-rec"></div>
+                    <div class="carousel-rec"></div>
+                    <div class="carousel-rec"></div>
+                </div>
+            </div>
+        </section>
+        <!-- 今日焦点 -->
+        <section class="todayFocus row ">
+            <h2>今日焦点</h2>
+            <div>
+                <div class="eight columns">
+                    <div class="six columns">
+                        <!-- 图片合文本模块 -->
+                        <div class="picModules">
+                            <a href="" class="hoverOpacity"><img src="./images/pclady/355-534_3.jpg" alt="图片描述"></a>
+                            <span class="picTittle">黄渤的处女作，上演了喜剧里的《一出好戏》。与世隔绝的荒岛群像，物竞天择的社会。</span>
+                        </div>
+                    </div>
+                    <div class="six columns">
+                        <!-- 含边框列表模块one -->
+                        <div class="listModuleOne">
+                            <a href="">
+                                <h5>美丽炸裂！易烊千玺太迷人</h3>
+                                <p>易烊千玺的正确打开方式</p>
+                            </a>
+                            <ul>
+                                <li><a href="">仅售249元！号用到炸裂的露娜球特价了</a></li>
+                                <li><a href="">有孩子也要有一个属于自己的空间</a></li>
+                                <li><a href="">阿玛尼限量系列</a></li>
+                            </ul>
+                            <video poster="./images/pclady/391254_1.jpg" controls>
+                                <source src="./1533889978236-vpclady-80257-1_2.mp4" type="video/mp4">
+                                <source src="" type="video/ogg">
+                                您的浏览器不支持播放视频
+                            </video>
+                            <span>视频播放区</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 灰色背景板块 -->
+                <div class="four columns bgGray u-pull-right">
+                    <div class="picModules">
+                        <a href="" class="hoverOpacity">
+                            <img src="./images/pclady/355230.jpg" alt="图片描述">
+                        </a>
+                        <span class="picTittle">图片描述文本，灰色背景区</span>
+                    </div>
+                    <div class="bor-tittle">
+                        <span>新品抢鲜测</span>
+                    </div>
+                    <div class="picModules">
+                        <a href="" class="hoverOpacity">
+                            <img src="./images/pclady/355-230 (2).jpg" alt="图片描述">
+                        </a>
+                        <span class="picTittle">图片描述文本，灰色背景区</span>
+                    </div>
+                    <div class="bor-tittle">
+                        <span>免费试用</span>
+                    </div>
+                    <section class="row carousel" id="small-carousel">
+                        <div>
+                            <div class="slide-wrap">
+                                <a href="" class="prev" target="_self"></a>
+                                <a href="" class="next" target="_self"></a>
+                                <div class="imgWrap">
+                                    <ul>
+                                        <li>
+                                            <a href="">
+                                                <img src="./images/pclady/cosme/315.jpg" alt="">
+                                                <!-- 比主轮播图加入 p  -->
+                                                <p>优资绿茶籽爆水精华乳</p>
+                                                <p class="ca-detail">7.26-8.09 数量：30份</p>
+
+                                            </a>
+                                        </li>
+                                        <li class="pic">
+                                            <a href="">
+                                                <img src="./images/pclady/cosme/315_4 (1).jpg" alt="">
+                                                <span>图片描述文本2</span>
+                                                <p>产品描述，产品描述</p>
+                                                <p class="ca-detail">产品描述，产品描述</p>
+                                            </a>
+                                        </li>
+                                        <li class="pic">
+                                            <a href="">
+                                                <img src="./images/pclady/cosme/315_4.jpg" alt="">
+                                                <span>图片描述文本3</span>
+                                                <p>产品描述，产品描述</p>
+                                                <p class="ca-detail">产品描述，产品描述</p>
+                                            </a>
+                                        </li>
+                                        <br>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="circle-ctrl">
+                                <div class="carousel-rec cur-rec"></div>
+                                <div class="carousel-rec"></div>
+                                <div class="carousel-rec"></div>
+                                
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- 好物推荐 -->
+                <div class="eight columns clearMargin">
+                    <p class="good-rec">FAVORITES好物推荐</p>
+                    <div>
+                        <div class="six columns valign">
+                            <div class="picModules">
+                                <a href="" class="hoverOpacity"><img src="./images/pclady/355243_1.jpg" alt="图片描述"></a>
+                                <span class="picTittle">图片描述文本，好物推荐</span>
+                            </div>
+                        </div>
+                        <div class="six columns valign">
+                            <div class="picModules">
+                                <a href="" class="hoverOpacity">
+                                    <img src="./images/pclady/355250_2.jpg" alt="图片描述">
+                                </a>
+                                <span class="picTittle">图片描述文本，好物推荐</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 特别策划 -->
+        <section class="row">
+            <div class="colName">
+                <a href="" id="specialPlan"></a>
+            </div>
+            <nav class="colNav">
+                <ul>
+                    <li><a href="">路透SHE</a></li>
+                    <li>
+                        <a href="">种草机</a>
+                    </li>
+                    <li>
+                        <a href="">半空间</a>
+                    </li>
+                    <li>
+                        <a href="">CHIC FEVER</a>
+                    </li>
+                    <li>
+                        <a href="">美容风云榜</a>
+                    </li>
+                    <li>
+                        <a href="">时装周</a>
+                    </li>
+                    <li><a href="">懂小姐知道</a></li>
+                </ul>
+            </nav>
+            <section class="row carousel" id="threeCarousel">
+                <div>
+                    <div class="slide-wrap">
+                        <a href="" class="prev" target="_self"></a>
+                        <a href="" class="next" target="_self"></a>
+                        <div class="imgWrap">
+                            <div>
+                                <ul>
+                                    <li class="one-third column">
+                                        <a href="">
+                                            <img src="./images/pclady/355-230.jpg" alt="">
+                                            <p>PCLADY&|生之律动</p>
+                                        </a>
+                                    </li>
+                                    <li class="one-third column">
+                                        <a href="">
+                                            <img src="./images/pclady/355-230 (2).jpg" alt="">
+                                            <p>在北海道遇见25度的盛夏</p>
+                                        </a>
+                                    </li>
+                                    <li class="one-third column">
+                                        <a href="">
+                                            <img src="./images/pclady/355-230 (1).jpg" alt="">
+                                            <p>一场上海滩《脱身》复古奢润之旅</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="circle-ctrl">
+                        <div class="carousel-rec cur-rec"></div>
+                        <div class="carousel-rec"></div>
+                        <div class="carousel-rec"></div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!-- 美容 -->
+        <section class="row">
+            <div class="colName">
+                <a href="" id="beauty"></a>
+            </div>
+            <nav class="colNav">
+                <ul>
+                    <li>
+                        <a href="">美容</a>
+                    </li>
+                    <li>
+                        <a href="">评测</a>
+                    </li>
+                    <li>
+                        <a href="">美发</a>
+                    </li>
+                    <li>
+                        <a href="">试用</a>
+                    </li>
+                    <li>
+                        <a href="">化妆品库</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="row">
+                <section class="one-third column carousel" id="alongCarousel">
+                    <div>
+                        <div class="slide-wrap">
+                            <a href="" class="prev" target="_self"></a>
+                            <a href="" class="next" target="_self"></a>
+                            <div class="imgWrap">
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <img src="./images/pclady/beauty/355c535_1.jpg" alt="">
+                                            <span>图片描述文本1</span>
+                                        </a>
+                                    </li>
+                                    <li class="pic">
+                                        <a href="">
+                                            <img src="./images/pclady/beauty/355c535_6.jpg" alt="">
+                                            <span>图片描述文本2</span>
+                                        </a>
+                                    </li>
+                                    <li class="pic">
+                                        <a href="">
+                                            <img src="./images/pclady/beauty/355-535.jpg alt="">
+                                            <span>图片描述文本3</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="circle-ctrl">
+                            <div class="carousel-rec cur-rec"></div>
+                            <div class="carousel-rec"></div>
+                            <div class="carousel-rec"></div>
+                        </div>
+                    </div>
+                </section>
+                <div class="one-third column">
+                    <div class="mb-30">
+                        <div class="picModules">
+                            <a href="" class="hoverOpacity">
+                                <img src="./images/pclady/355243_1.jpg" alt="图片描述">
+                            </a>
+                            <span class="picTittle">图片描述文本，好物推荐</span>
+                        </div>
+                    </div>
+                    <!-- 列表板块 -->
+                    <div>
+                        <div class="listModuleOne">
+                            <ul class="listNoType">
+                                <li class="listNum">
+                                    <a href="">仅售249元！号用到炸裂的露娜球特价了</a>
+                                </li>
+                                <li class="listNum">
+                                    <a href="">有孩子也要有一个属于自己的空间</a>
+                                </li>
+                                <li class="listNum">
+                                    <a href="">阿玛尼限量系列</a>
+                                </li>
+                                <li class="listNum">
+                                    <a href="">阿玛尼限量系列</a>
+                                </li>
+                                <li class="listNum">
+                                    <a href="">阿玛尼限量系列</a>
+                                </li>
+                                <li class="listNum">
+                                    <a href="">阿玛尼限量系列</a>
+                                </li>
+                                <li class="listNum">
+                                    <a href="">阿玛尼限量系列</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="one-third column bgGray height-515">
+                    <div class="picModules">
+                        <a href="" class="hoverOpacity">
+                            <img src="./images/pclady/355230.jpg" alt="图片描述">
+                        </a>
+                        <span class="picTittle">图片描述文本，灰色背景区</span>
+                    </div>
+                    <div class="bor-tittle">
+                        <span>本周热门</span>
+                    </div>
+                    <section class="row carousel" id="small-carousel">
+                        <div>
+                            <div class="slide-wrap">
+                                <a href="" class="prev" target="_self"></a>
+                                <a href="" class="next" target="_self"></a>
+                                <div class="imgWrap">
+                                    <div class="six-columns">
+
+                                    </div>
+                                    <ul>
+                                        <li class="six columns">
+                                            <a href="">
+                                                <img src="./images/pclady/cosme/BCJ.jpg" alt="">
+                                                <!-- 比主轮播图加入 p  -->
+                                                <p>爆水精华乳</p>
+                                                <br>
+                                                <br>           
+                                            </a>
+                                        </li>
+                                        <li class="six columns">
+                                            <a href="">
+                                                <img src="./images/pclady/cosme/ZCX.jpg" alt="">
+                                                <p>产品描述，产品描述</p>
+                                                <br>
+                                                <br>
+                                            </a>
+                                        </li>
+                                        <li class="pic six columns">
+                                            <a href="">
+                                                <img src="./images/pclady/cosme/-3.jpg" alt="">
+                                                <p>产品描述，产品描述</p>
+                                                <br>
+                                                <br>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="circle-ctrl">
+                                <div class="carousel-rec cur-rec"></div>
+                                <div class="carousel-rec"></div>
+                                <div class="carousel-rec"></div>
+                
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <!-- 时尚 -->
+        <section class="row">
+            <div class="colName">
+                <a href="" id="fashion"></a>
+            </div>
+            <nav class="colNav">
+                <ul>
+                    <li>
+                        <a href="">时装</a>
+                    </li>
+                    <li>
+                        <a href="">奢品</a>
+                    </li>
+                    <li>
+                        <a href="">腕表</a>
+                    </li>
+                    <li>
+                        <a href="">专题</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="row">
+                <section class="one-third column carousel" id="alongCarousel">
+                    <div>
+                        <div class="slide-wrap">
+                            <a href="" class="prev" target="_self"></a>
+                            <a href="" class="next" target="_self"></a>
+                            <div class="imgWrap">
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <img src="./images/pclady/beauty/shishang_6.jpg" alt="">
+                                            <span>图片描述文本1</span>
+                                        </a>
+                                    </li>
+                                    <li class="pic">
+                                        <a href="">
+                                            <img src="./images/pclady/beauty/355c535_6.jpg" alt="">
+                                            <span>图片描述文本2</span>
+                                        </a>
+                                    </li>
+                                    <li class="pic">
+                                        <a href="">
+                                            <img src="./images/pclady/beauty/355-535.jpg alt=" ">
+                                            <span>图片描述文本3</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="circle-ctrl ">
+                            <div class="carousel-rec cur-rec "></div>
+                            <div class="carousel-rec "></div>
+                            <div class="carousel-rec "></div>
+                        </div>
+                    </div>
+                </section>
+                <div class="one-third column">
+                    <div class="mb-10">
+                        <div class="six columns">
+                            <div class="picModules">
+                                <a href="" class="hoverOpacity">
+                                    <img src="./images/pclady/beauty/18_1.jpg" alt="图片描述">
+                                </a>
+                                <span class="picTittle">图片描述文本</span>
+                            </div>
+                        </div>
+                        <div class="six columns">
+                            <div class="picModules">
+                                <a href="" class="hoverOpacity">
+                                    <img src="./images/pclady/beauty/2016ss.jpg" alt="图片描述">
+                                </a>
+                                <span class="picTittle">图片描述文本</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-10">
+                        <div class="six columns">
+                            <div class="picModules">
+                                <a href="" class="hoverOpacity">
+                                    <img src="./images/pclady/beauty/2016sz.jpg" alt="图片描述">
+                                </a>
+                                <span class="picTittle">图片描述文本</span>
+                            </div>
+                        </div>
+                        <div class="six columns">
+                            <div class="picModules">
+                                <a href="" class="hoverOpacity">
+                                    <img src="./images/pclady/beauty/170260_6.jpg" alt="图片描述">
+                                </a>
+                                <span class="picTittle">图片描述文本</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one-third column">
+                   <div class="row">
+                    <div class="picModules">
+                        <a href="" class="hoverOpacity">
+                            <img src="./images/pclady/beauty/shepingshishang.jpg" alt="图片描述">
+                        </a>
+                        <span class="picTittle">图片描述文本</span>
+                    </div>
+                   </div>
+                   <div class="row mt-25">
+                        <div>
+                            <div class="listModuleOne">
+                                <ul class="listNoType">
+                                    <li class="listNum">
+                                        <a href="">仅售249元！号用到炸裂的露娜球特价了</a>
+                                    </li>
+                                    <li class="listNum">
+                                        <a href="">有孩子也要有一个属于自己的空间</a>
+                                    </li>
+                                    <li class="listNum">
+                                        <a href="">阿玛尼限量系列</a>
+                                    </li>
+                                    <li class="listNum">
+                                        <a href="">阿玛尼限量系列</a>
+                                    </li>
+                                    <li class="listNum">
+                                        <a href="">阿玛尼限量系列</a>
+                                    </li>
+                                    <li class="listNum">
+                                        <a href="">阿玛尼限量系列</a>
+                                    </li>
+                                    <li class="listNum">
+                                        <a href="">阿玛尼限量系列</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="row bgGray mt-25">
+        <div class="container">
+            <div class="row">
+                <span class="ft current">友情链接</span>
+                <span class="ft">热点标签</span>
+                <span class="ft">重点推荐</span>
+                <span class="ft">汽车热门</span>
+            </div>
+            <div class="row wrap">
+                <div class="content">
+                    <a href="">中文网</a>
+                    <a href="">凤凰网</a>
+                    <a href="">三八女性网</a>
+                    <a href="">知识库</a>
+                    <a href="">海报时尚网</a>
+                    <a href="">时尚先生</a>
+                    <a href="">新浪时尚</a>
+                    <a href="">新浪女性</a>
+                </div>
+                <div class="content" style="display: none;">
+                    <a href="">祛斑</a>
+                    <a href="">面膜</a>
+                    <a href="">油性皮肤</a>
+                    <a href="">戒指戴法</a>
+                    <a href="">裸妆</a>
+                    <a href="">美白祛斑面膜</a>
+                    <a href="">面霜推荐</a>
+                    <a href="">什么精华液好</a>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+</body>
+</html>
