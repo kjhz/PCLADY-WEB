@@ -16,16 +16,18 @@
     <header>
         <div class="container">
             <div class="nav-left">
-                <span>太平洋网络：</span>
-                <a href="">电脑网</a>
-                <a href="">汽车网</a>
-                <a href="" class="nav-cur">时尚网</a>
-                <a href="" class="nav-cur-after">亲子网</a>
-                <a href="">家居网</a>
+                <span class="to-left">太平洋网络：</span>
+                <div class="to-left">
+                    <a href="">电脑网</a>
+                    <a href="">汽车网</a>
+                    <a href="" class="nav-cur">时尚网</a>
+                    <a href="" class="nav-cur-after">亲子网</a>
+                    <a href="">家居网</a>
+                </div>
             </div>
             <div class="nav-right">
                 <ul>
-                    <!-- 注册 登陆 -->
+                    <!-- 登陆 -->
                     <li>
                         <div class="drop-li">
                             <a href="" class="login"><span>登陆</span></a>
@@ -58,7 +60,7 @@
     </header>
     <main class="container">
         <!-- 导航栏 -->
-        <nav>
+        <nav class="row">
             <a href="" id="nav-logo"></a>
             <div class="row"  id="main-nav">
                 <ul>
@@ -77,73 +79,129 @@
                 </form>
             </div>
 
-            <!-- 导航 弹出区 -->
-            <div class="navBox">
-                <div class="appName">
+            <!-- 导航 首页子分类  -->
+            <div class="row navBox">
+                <div class="navBoxName">
                     <a href="" class="box-app myapp">摩登课堂APP</a>
                     <div class="qr-code">
-                        <img src="./images/global/mo_modern.jpg" alt="二维码：摩登课堂APP" width="152" height="152">
+                        <img src="./images/global/mo_modern.jpg" alt="二维码：摩登课堂APP">
                     </div>
                 </div>
-                <div class="appName">
+                <div class="navBoxName">
                     <a href="" class="box-app myapp">PCLADY移动版</a>
                     <div class="qr-code">
-                        <img src="./images/global/mo_pclady.png" alt="二维码：PC移动版"  width="152" height="152">
+                        <img src="./images/global/mo_pclady.png" alt="二维码：PC移动版" >
                     </div>
                 </div>
-                <div class="appName">
-                    <a href="" class="box-app box-app weixin">微信公众号</a>
+                <div class="navBoxName">
+                    <a href="" class="box-app weixin">微信公众号</a>
                     <div class="qr-code">
-                        <img src="./images/global/wx_pclady.jpg" alt="二维码：微信公众号" width="152" height="152">
+                        <img src="./images/global/wx_pclady.jpg" alt="二维码：微信公众号">
                     </div>
                 </div>
-                <div class="appName">
+                <div class="navBoxName">
                     <a href="" class="box-app weibo">官方微博</a>
                     <div class="qr-code">
-                        <img src="./images/global/wb.jpg" alt="二维码：官方微博" width="152" height="152">
+                        <img src="./images/global/wb.jpg" alt="二维码：官方微博">
                     </div>
                 </div>
+            </div>
+            <div class="row nav-channel">
+                <ul>
+                    <li></li>
+                    <li>
+                        <span>
+                            <a href="">美容</a>
+                            <a href="">测评</a>
+                            <a href="">美发</a>
+                            <a href="">试用</a>
+                            <a href="">化妆品库</a>
+                            <a href="">医学美容</a>
+                            <a href="">男士</a>
+                        </span>
+                    </li>
+                    <li>
+                        <a href="">时装</a>
+                        <a href="">奢品</a>
+                        <a href="">腕表</a>
+                        <a href="">男士</a>
+                        <a href="">专题</a>
+                    </li>
+                    <li>
+                        <a href="">明星首页</a>
+                        <a href="">娱乐星闻</a>
+                        <a href="">大咖专场</a>
+                        <a href="">影视综艺</a>
+                        <a href="">明星库</a>
+                    </li>
+                    <li>
+                        <a href="">乐活</a>
+                        <a href="">健康</a>
+                        <a href="">百科</a>
+                        <a href="">知识库</a>
+                    </li>
+                    <li>
+                        <a href="">视频首页</a>
+                        <a href="">独家原创</a>
+                        <a href="">美丽公开课</a>
+                        <a href="">明星风尚</a>
+                        <a href="">美容美体</a>
+                        <a href="">时尚秀场</a>
+                        <a href="">品牌创意</a>
+                    </li>
+                    <li>
+                        <a href="">试用</a>
+                        <a href="">正在试用</a>
+                        <a href="">试用回顾</a>
+                        <a href="">帮助&策略</a>
+                    </li>
+                    <li>
+                        <a href="">化妆品库</a>
+                        <a href="">找产品</a>
+                        <a href="">找品牌</a>
+                        <a href="">看测评</a>
+                        <a href="">排行榜</a>
+                        <a href="">达人汇</a>
+                        <a href="">互动分享</a>
+                    </li>
+                </ul>
             </div>
         </nav>
         <!-- 主轮播图 -->
         <section class="row carousel" id="mainCarousel">
-            <div>
                 <div class="slide-wrap">
                     <a href="" class="prev" target="_self"></a>
                     <a href="" class="next" target="_self"></a>
-                    <div class="imgWrap">
-                        <ul>
-                            <li><a href="">
-                                <img src="./images/pclady/carouse/0806PC.jpg" alt="" >
-                                <span>图片描述文本1</span>
-                            </a></li>
-                            <li class="pic" ><a href="">
-                                <img src="./images/pclady/carouse/0807PC.jpg" alt="" >
-                                <span>图片描述文本2</span>
-                            </a></li>
-                            <li class="pic" ><a href="">
-                                <img src="./images/pclady/carouse/1120-500-100k.jpg" alt="" >
-                                <span>图片描述文本3</span>
-                            </a></li>
-                            <li class="pic" ><a href="">
-                                <img src="./images/pclady/carouse/1120-500_5.jpg" alt="" >
-                                <span>图片描述文本4</span>
-                            </a></li>
-                            <li class="pic" ><a href="">
-                                <img src="./images/pclady/carouse/1120_3.jpg" alt="" >
-                                <span>图片述文本5</span>
-                            </a></li>
+                    <ul class="imgWrap">
+                        <li><a href="">
+                            <img src="./images/pclady/carouse/0806PC.jpg" alt="" >
+                            <span>图片描述文本1</span>
+                        </a></li>
+                        <li class="pic" ><a href="">
+                            <img src="./images/pclady/carouse/0807PC.jpg" alt="" >
+                            <span>图片描述文本2</span>
+                        </a></li>
+                        <li class="pic" ><a href="">
+                            <img src="./images/pclady/carouse/1120-500-100k.jpg" alt="" >
+                            <span>图片描述文本3</span>
+                        </a></li>
+                        <li class="pic" ><a href="">
+                            <img src="./images/pclady/carouse/1120-500_5.jpg" alt="" >
+                            <span>图片描述文本4</span>
+                        </a></li>
+                        <li class="pic" ><a href="">
+                            <img src="./images/pclady/carouse/1120_3.jpg" alt="" >
+                            <span>图片述文本5</span>
+                        </a></li>
                         </ul>
-                    </div>
                 </div>
                 <div class="circle-ctrl">
-                    <div class="carousel-rec cur-rec"></div>
-                    <div class="carousel-rec"></div>
-                    <div class="carousel-rec"></div>
-                    <div class="carousel-rec"></div>
-                    <div class="carousel-rec"></div>
+                        <span class="cur-rec"></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
                 </div>
-            </div>
         </section>
         <!-- 今日焦点 -->
         <section class="todayFocus row ">
@@ -657,5 +715,17 @@
             
         </div>
     </footer>
+
+    <script src="./js/slide.js"></script>
+    <script>
+        let carousel = new Carousel({
+            wrap: document.querySelector("#mainCarousel"),
+            urlArr: ["./images/pclady/carouse/0806PC.jpg",
+                     "./images/pclady/carouse/0807PC.jpg",
+                     "./images/pclady/carouse/1120-500-100k.jpg",
+                     "./images/pclady/carouse/1120-500_5.jpg",
+                     "./images/pclady/carouse/1120_3.jpg"]
+        });
+    </script>
 </body>
 </html>
