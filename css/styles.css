@@ -1,6 +1,6 @@
 @import url(./normalize.css);
 @import url(./skeleton.css);
-
+@import url(./carousel.css);
 body {
   font-family: "宋体";
 }
@@ -218,6 +218,10 @@ main>nav #main-nav {
   background: url(../images/global/indexPic.png) no-repeat;
 }
 
+.beautyName>span {
+  background: url(../images/pclady/beauty/beauty.png) no-repeat;
+}
+
 .myapp,.weixin,.weibo {
   background: url(../images/global/sprite.png) no-repeat;
 }
@@ -263,16 +267,11 @@ main nav {
   z-index: 1;
 }
 
-.nav-channel {
-  position: relative;
-  z-index: 2;
-}
-
 .navBox .navBoxName {
   float: left;
   position: relative;
   width: 120px;
-  margin: 12px 0;
+  margin: 14px 0;
   padding: 0 0 0 15px;
   border-right: 1px solid rgb(202, 201, 201);
 }
@@ -314,6 +313,11 @@ main nav {
 }
 
 /* 导航子分类弹出 */
+.nav-channel {
+  position: relative;
+  z-index: 2;
+}
+
 .nav-channel ul {
   list-style-type: none;
   margin: 0;
@@ -324,7 +328,6 @@ main nav {
   display: none;
   overflow: auto;
   position: absolute;
-  height: 48px;
   width: 100%;
   bottom: 0;
   left: 0;
@@ -334,8 +337,8 @@ main nav {
 .nav-channel a {
   text-decoration: none;
   float: left;
-  font-size: 1.2rem;
-  margin: 18px 0 18px 10px;
+  font-size: 1.2px;
+  margin: 14px 0 14px 10px;
   padding: 0 10px 0 0;
   border-right: 1px solid rgb(202, 201, 201);
 }
@@ -345,9 +348,6 @@ main nav {
 }
 
 /* 轮播图 */
-.row {
-  clear: both;
-}
 .carousel, .slide-wrap, .imgWrap, .first-pic {
   position: relative;
 }
@@ -360,7 +360,7 @@ main nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
-    width: 100%;
+  width: 100%;
   display: inline-block;
 }
 
@@ -370,7 +370,7 @@ main nav {
 
 .imgWrap .pic {
   top: 0;
-  margin-left: 100%;
+  left: 100%;
 }
 
 .imgWrap span { /* 轮播图文字 */
@@ -460,10 +460,6 @@ main nav {
   position: relative;
 }
 
-.picTittle {
-  position: absolute;
-}
-
 .todayFocus {
   margin-top: 20px;
 }
@@ -481,10 +477,9 @@ main nav {
 }
 
 .picTittle {
-  width: 80%;
-  bottom: 10%;
+  width: 90%;
   color: white;
-  margin: 0 10%;
+  margin: 0 5%;
   text-align: center;
   text-shadow: 0 0 2px black;
 }
@@ -498,6 +493,7 @@ main nav {
 .listModuleOne a {
   text-decoration: none;
   font-size: 11px;
+  line-height: 1.8;
 }
 
 .listModuleOne h5 {
@@ -513,7 +509,6 @@ main nav {
 
 .listModuleOne span {
   display: inline-block;
-  width: 100%;
   text-align: center;
 }
 
@@ -528,6 +523,7 @@ main nav {
   border-bottom: 1px solid #888;
   position: relative;
   text-align: center;
+  
 }
 .bor-tittle span {
   padding: 0 10px;
@@ -547,7 +543,6 @@ main nav {
 
 #small-carousel .circle-ctrl{
   position: relative;
-  bottom: 20px;
 }
 
 .carousel a {
@@ -571,19 +566,19 @@ main nav {
 .good-rec {
   margin-bottom: 10px;
   line-height: 40px;
-  font-size: 2.4rem;
+  font-size: 2.4px;
 }
 
 /* 标准栏目设置 */
 
 
-.colName  {
+.colName,.beautyName,.fashionName {
   border-bottom: 1px solid black;
   height: 56px;
   margin: 20px 0;
 }
 
-.colName>a {
+.colName>a,.beautyName>span,.fashionName>span {
   display: block;
   width: 377px;
   height: 56px;
@@ -650,8 +645,8 @@ main nav {
   background-position: -70px -903px;
 }
 
-ul[class="listNoType"] {
-  margin: 00 0 0 10px;
+.listNoType {
+  margin: 0 0 0 10px;
   padding: 0;
   list-style-type: none;
 }
@@ -659,7 +654,7 @@ ul[class="listNoType"] {
 /* 定义列表数字图案 */
 .listNum {
   padding-left: 30px;
-  font-size: 1.5rem;
+  font-size: 1.5px;
   margin: 5px 0;
 }
 
@@ -714,6 +709,7 @@ ul[class="listNoType"] {
 
 .mb-30 {
   margin-bottom: 30px;
+  overflow: auto;
 }
 
 /* 美容区右侧滑动块 */
@@ -738,19 +734,19 @@ ul[class="listNoType"] {
 
 /* footer */
 .ft {
-  font-size: 1.3rem;
+  font-size: 1.3px;
   color: #acacac;
   margin: 10px 20px;
 }
 
 .current {
-  font-size: 1.6rem;
+  font-size: 1.6px;
   font-weight: bolder;
   color: black;
 }
 
 .content {
-  font-size: 1rem;
+  font-size: 1px;
   margin: 20px 0;
 }
 
@@ -766,3 +762,65 @@ ul[class="listNoType"] {
 .content a::after {
   content: "|"
 }
+
+.cb-a {
+  width: 69% !important;
+}
+.cb-b {
+  width: 27% !important;
+}
+.height-570 {
+  height: 570px;
+}
+
+.height-220 {
+  height: 220px;
+}
+
+.tittle-shadow {
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+  line-height: 20px;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 25px;
+  background: url(../images/global/star_shadow_bg.png) repeat-x center bottom;
+}
+
+.bgWhite {
+  border-color: black;
+}
+.bgWhite>span {
+  background-color: #fff;
+}
+
+.cb-c {
+  width: 24% !important;
+}
+
+.font10 {
+  font-size: 10px;
+  line-height: 40px;
+}
+
+.line2 {
+  line-height: 1.5;
+}
+.line2>li {
+  margin: 19px 0;
+}
+.line2 a {
+  font-size: 15px !important;
+}
+
+.fashionName span {
+  background: url(../images/pclady/fashion/dress.png) no-repeat;
+}
+
+.loveFashion .fashionName span{
+  width: 436px;
+  background-position: 0 0;
+}
+

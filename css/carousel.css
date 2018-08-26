@@ -1,0 +1,113 @@
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+[id$=_container] {
+  position: relative;
+  list-style-type: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+[id$=_page] { 
+  position: absolute; 
+  bottom: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  z-index: 1;
+}
+
+[class$=_pagination] {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  margin: 0 5px;
+  text-indent: -9999px;
+  background-color: rgb(202, 201, 201);
+  cursor: pointer;
+}
+
+[id$=_active] {
+  background-color: rgb(196, 26, 187);
+}
+
+[class$=_img-item] {
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 100%;;
+}
+
+[class$=_img-item] img {
+  width: 100%;
+  height: 100%;
+}
+
+[id$=_prev], 
+[id$=_next] {
+  display: block;
+  position: absolute;
+  top: 40%;
+  width: 37px;
+  height: 73px;
+  text-align: center;
+  line-height: 100%;
+  z-index: 1;
+  cursor: pointer;
+}
+
+[id$=_prev] {
+  background: url(../images/global/new-prev01.png) no-repeat;
+  left: -38px;
+}
+
+[id$=_next] {
+  background: url(../images/global/new-next01.png) no-repeat;
+  right: -38px;
+}
+
+[id$=_container] p { /* 轮播图文字 */
+  position: absolute;
+  width: 90%;
+  text-align: center;
+  margin: 0 5%;
+  bottom: 35px;
+  color: white;
+  text-shadow: 0 0 1px black;
+}
+
+.carousel:hover {
+  opacity: 0.8;
+}
+
+.carousel:hover [id$=_prev] {
+  transform: translateX(38px);
+  -webkit-transform: translateX(38px);
+  -moz-transform: translateX(38px);
+  -o-transform: translateX(38px);
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -o-transition: .3s;
+}
+
+.carousel:hover [id$=_next]  {
+  transform: translateX(-38px);
+  -webkit-transform: translateX(-38px);
+  -moz-transform: translateX(-38px);
+  -o-transform: translateX(-38px);
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -o-transition: .3s;
+}
+
+
