@@ -572,13 +572,14 @@ main nav {
 /* 标准栏目设置 */
 
 
-.colName,.beautyName,.fashionName {
+.colName,.bg-head{
   border-bottom: 1px solid black;
   height: 56px;
   margin: 20px 0;
 }
 
-.colName>a,.beautyName>span,.fashionName>span {
+.colName>a,
+.bg-head>span{
   display: block;
   width: 377px;
   height: 56px;
@@ -847,4 +848,26 @@ main nav {
 .listModuleOne .listNoType li .i10 {
     width: 24px;
     background-position: -376px -324px;
+}
+
+.starName>span {
+  background: url(../images/pclady/star/star.png) no-repeat;
+}
+
+.starTopic .starName>span {
+  width: 321px;
+  height: 56px;
+}
+
+.starMovie .starName>span {
+  width: 393px;
+  height: 56px;
+  background-position: 0 -114px;
+}
+
+.wt-27 {
+  width: 27.7% !important;
+}
+.wt-36 {
+  width: 36.6% !important;
 }
