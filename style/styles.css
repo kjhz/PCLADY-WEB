@@ -256,8 +256,9 @@ main>nav form {
 /* 导航
 *  首页子分类
 */
-main nav {
+main>nav {
   position: relative;
+  z-index: 999;
 }
 
 .navBox {
@@ -297,7 +298,7 @@ main nav {
   box-sizing: border-box;
   width: 152px;
   height: 152px;
-  visibility: hidden;
+  display: none;
   position: absolute;
   z-index: 99;
   top: 28px;
@@ -307,7 +308,7 @@ main nav {
 }
 
 .navBox .navBoxName:hover .qr-code {
-  visibility: visible;
+  display: block;
 }
 
 /* 导航子分类弹出 */
@@ -332,17 +333,18 @@ main nav {
   background-color: #fff;
 }
 
-.nav-channel a {
+
+.nav-channel li:not(:first-of-type).show {
+  display: block;
+}
+
+.nav-channel li:not(:first-of-type) a {
   text-decoration: none;
   float: left;
   font-size: 12px;
-  margin: 14px 0 14px 10px;
+  margin: 16px 0 16px 10px;
   padding: 0 10px 0 0;
   border-right: 1px solid rgb(202, 201, 201);
-}
-
-.nav-channel .show {
-  display: block;
 }
 
 /* 轮播图 */
@@ -599,6 +601,7 @@ main nav {
 
 .colNav li {
   float: left;
+  margin-bottom: 10px;
   text-align: center;
   line-height: 1;
   border-left: 2px solid #acacac;
@@ -732,33 +735,37 @@ main nav {
 }
 
 /* footer */
-.ft {
+.tabBox .title>span {
   font-size: 13px;
   color: #acacac;
   margin: 10px 20px;
 }
 
-.current {
+.tabBox .title .current {
   font-size: 16px;
   font-weight: bolder;
   color: black;
 }
-
-.content {
-  font-size: 1px;
+.tabBox .tabContent>div {
+  font-size: 10px;
   margin: 20px 0;
+  display: none;
 }
 
-.content a {
+.tabBox .tabContent>div.show {
+  display: block;
+}
+
+.tabBox .tabContent>div  a {
   text-decoration: none;
 }
 
-.content a:hover {
+.tabBox .tabContent>div  a:hover {
   color: #acacac;
   text-decoration: underline;
 }
 
-.content a::after {
+.tabBox .tabContent>div  a::after {
   content: "|"
 }
 
@@ -992,6 +999,7 @@ header[class~="mainPic"] {
 
 #loginform {
   padding: 25px;
+  position: relative;
 }
 
 input[name="account"] {
@@ -1040,3 +1048,4 @@ input[type="password"] {
 #formfoot a:last-child {
   float: right
 }
+

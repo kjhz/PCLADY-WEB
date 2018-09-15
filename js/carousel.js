@@ -95,7 +95,7 @@ class Carousel {
 	setTime() {                                 //自动播放
 		this.settimeID = setInterval(() => {
 			document.querySelector(`#${this.wrapId}_next`).click();
-		}, 4000);
+		}, 2000);
 	}
 	claerTime() {                               //鼠标悬浮取消自动播放
 		let theId = this.settimeID;             //解决this绑定丢失

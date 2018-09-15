@@ -48,7 +48,7 @@
                             </div>
                         </div>
                     </div>
-                    <form action="" method="post" id="loginform">
+                    <form action="form.php" method="post" id="loginform" onsubmit="return validateForm(this)">
                         <input type="text" placeholder="用户名/邮箱/手机号"  name="account">
                         <input type="password">
                         <input type="submit" value="登录">
@@ -62,6 +62,7 @@
             </div> 
         </main>
     </div>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
